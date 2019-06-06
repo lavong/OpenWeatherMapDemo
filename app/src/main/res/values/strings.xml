@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OpenWeatherMapDemo</string>
+
+    <string name="menu_item_search">Search</string>
+
+    <string name="error_generic">Aww, no weather today. Maybe later.</string>
+    <string name="error_offline">Go online?</string>
+</resources>
