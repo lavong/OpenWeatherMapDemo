@@ -1,5 +1,7 @@
 # OpenWeatherMapDemo
 
+[![Build Status](https://app.bitrise.io/app/f78741ee27432042/status.svg?token=Cck5VHSlFPiKFzCb2--jkw&branch=dev)](https://app.bitrise.io/app/f78741ee27432042)
+
 Android application demonstrating [OpenWeatherMap API][1] usage using:
 - Android
 - Kotlin
