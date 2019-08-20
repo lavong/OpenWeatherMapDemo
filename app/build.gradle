@@ -58,7 +58,7 @@ android {
             }
             jacocoOptions {
                 html.enabled = true
-                xml.enabled = false
+                xml.enabled = true
                 csv.enabled = false
                 unitTests.all {
                     testLogging.events = ["passed", "skipped", "failed"]
@@ -142,3 +142,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+apply from: 'jacoco.gradle'
