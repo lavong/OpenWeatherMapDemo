@@ -8,11 +8,11 @@ apply plugin: 'jacoco'
 apply plugin: 'de.mannodermaus.android-junit5'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.ingloriousmind.openweathermapdemo"
         minSdkVersion 23
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -88,12 +88,11 @@ configurations.all {
 }
 
 ext {
-    koin_version = '2.0.0-GA'
-    room_version = '2.1.0-rc01'
+    koin_version = '2.0.1'
+    room_version = '2.1.0'
     retrofit_version = '2.5.0'
     glide_version = '4.9.0'
     spek_version = '2.0.5'
-    junit5_runner = '0.2.2'
     mockk_version = '1.9.3'
 }
 
@@ -131,7 +130,10 @@ dependencies {
     testImplementation "org.spekframework.spek2:spek-dsl-jvm:$spek_version"
     testImplementation "org.spekframework.spek2:spek-runner-junit5:$spek_version"
     testImplementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
-    androidTestRuntimeOnly "de.mannodermaus.junit5:android-instrumentation-test-runner:$junit5_runner"
+    androidTestImplementation "androidx.test:runner:1.2.0"
+    androidTestImplementation "org.junit.jupiter:junit-jupiter-api:5.4.2"
+    androidTestImplementation "de.mannodermaus.junit5:android-test-core:1.0.0"
+    androidTestRuntimeOnly "de.mannodermaus.junit5:android-test-runner:1.0.0"
     testImplementation "io.mockk:mockk:${mockk_version}"
     androidTestImplementation "io.mockk:mockk-android:${mockk_version}"
 
