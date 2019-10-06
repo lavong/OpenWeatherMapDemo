@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        kotlin_version = '1.3.41'
+        kotlin_version = '1.3.50'
         jacoco_version = '0.8.4'
         android_junit5_version = '1.5.1.0'
     }
@@ -11,7 +11,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:3.5.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "de.mannodermaus.gradle.plugins:android-junit5:$android_junit5_version"
         classpath "org.jacoco:org.jacoco.core:$jacoco_version"
