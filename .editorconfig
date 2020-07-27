@@ -1,0 +1,7 @@
+root = true
+
+[*]
+max_line_length = 140
+
+[{*.kt, *.kts, *.java}]
+ij_kotlin_align_in_columns_case_branch = true
