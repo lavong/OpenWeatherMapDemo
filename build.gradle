@@ -3,7 +3,7 @@
 buildscript {
     ext {
         kotlin_version = '1.3.72'
-        jacoco_version = '0.8.4'
+        jacoco_version = '0.8.5'
         android_junit5_version = '1.5.1.0'
     }
     repositories {
