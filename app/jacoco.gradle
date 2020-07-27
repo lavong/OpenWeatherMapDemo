@@ -28,10 +28,10 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
     def javaSrc = "$project.projectDir/src/main/java"
     def kotlinSrc = "$project.projectDir/src/main/kotlin"
 
-    sourceDirectories = files([javaSrc, kotlinSrc])
-    classDirectories = files([javaClasses, kotlinClasses])
-    
-    executionData = fileTree(dir: project.buildDir, includes: [
+    getSourceDirectories().setFrom(files([javaSrc, kotlinSrc]))
+    getClassDirectories().setFrom(files([javaClasses, kotlinClasses]))
+
+    getExecutionData().setFrom(fileTree(dir: project.buildDir, includes: [
             'jacoco/testDevDebugUnitTest.exec', 'outputs/code-coverage/connected/*coverage.ec'
-    ])
+    ]))
 }
